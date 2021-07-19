@@ -36,6 +36,7 @@ public class Campeonato {
 			// Trata a possibilidade de gol do time visitante
 			if(probabilityV > 95) vGoals++;
 		}
+		
 		if(mGoals > vGoals) {
 			m.ganhar(mGoals - vGoals);
 			v.perder(vGoals - mGoals);

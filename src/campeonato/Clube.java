@@ -17,7 +17,7 @@ public class Clube {
 	}
 	
 	void empatar() {
-		this.pts += 1;
+		this.pts++;
 	}
 	
 	void perder(int gb) {
