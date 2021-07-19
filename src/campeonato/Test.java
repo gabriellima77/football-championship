@@ -3,7 +3,7 @@ package campeonato;
 public class Test {
 	
 	static void showTable(Campeonato c) {
-		System.out.println("-------------- " + c.name + " --------------");
+		System.out.println("-------------- Brasileirão --------------");
 		for(int i = 0; i < c.clubes.length; i++) {
 			System.out.println("Time: " + c.clubes[i].name + ", Pts: " + c.clubes[i].pts + ", Saldo de Gols: " + c.clubes[i].gb + "\n");
 		}
@@ -18,13 +18,12 @@ public class Test {
 			"Cuiabá", "Sport", "Grêmio", "Chapecoense"
 		};
 		
-		Campeonato brasileirao = new Campeonato("Brasileirão", clubesNames);
+		Campeonato brasileirao = new Campeonato(clubesNames);
 		brasileirao.jogarCampeonato();
-		showTable(brasileirao);
 		Clube campeao = brasileirao.getCampeao();
 		System.out.println("============== O campeão =============="); 
 		System.out.println("Nome: " + campeao.name + "\nPts: " + campeao.pts + "\nSaldo de Gols: " + campeao.gb);
 	}
-	}
+}
 	
 	
